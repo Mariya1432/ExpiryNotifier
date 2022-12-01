@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "149830361460",
+    "project_id": "expiryremindr",
+    "storage_bucket": "expiryremindr.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149830361460:android:a555d4ed117e0b61b4cc21",
+        "android_client_info": {
+          "package_name": "com.example.expirynotifier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149830361460-kqmsc08gkmvbc53bgs02tb7ml5058rf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA25TM3yJ35hhA0NLB6Tbvjbj-XjR9YWM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149830361460-kqmsc08gkmvbc53bgs02tb7ml5058rf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

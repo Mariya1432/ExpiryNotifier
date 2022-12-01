@@ -2,11 +2,18 @@
     <string name="app_name">Expiry Notifier</string>
 
     <string-array name="category">
-        <item>--- Select Category ---</item>
+        <item>Select Category</item>
         <item>Medicines</item>
         <item>Groceries</item>
         <item>Nuts and Dry Fruits</item>
         <item>Others</item>
+    </string-array>
+
+    <string-array name="days">
+        <item>When to Notify</item>
+        <item>On Expiry Day</item>
+        <item>Before One Day</item>
+        <item>Before Two Days</item>
     </string-array>
 
 </resources>

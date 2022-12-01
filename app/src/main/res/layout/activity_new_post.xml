@@ -39,24 +39,41 @@
                     android:id="@+id/productEdittext"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/black"
-                    android:hint="Enter Product Name" />
+                    android:hint="Enter Product Name"
+                    android:textColor="@color/black" />
 
-                <Spinner
-                    android:id="@+id/categorySpinner"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:textAlignment="center"
-                    android:entries="@array/category"
-                    android:layout_marginTop="8dp" />
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <Spinner
+                        android:id="@+id/categorySpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/category" />
+
+                    <Spinner
+                        android:id="@+id/daysSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:entries="@array/days" />
+
+                </LinearLayout>
+
 
                 <ImageView
+                    android:id="@+id/image"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
                     android:src="@drawable/new_image" />
+                
 
                 <CalendarView
                     android:id="@+id/calendar"
@@ -75,23 +92,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0"
-        android:orientation="vertical"
-        >
-    <Button
-        android:id="@+id/save"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/teal_200"
-        android:layout_margin="8dp"
-        android:text="Save Item"
-        android:textColor="@color/white" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@color/teal_200"
+            android:text="Save Item"
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/delete"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/red"
             android:layout_margin="8dp"
+            android:background="@color/red"
             android:text="Delete Item"
             android:textColor="@color/white" />
     </LinearLayout>
